@@ -13,6 +13,7 @@ namespace JetBackup\Core\Destination\HelloWorld;
 use JetBackup\Core\Destination\Integration\Destination;
 use JetBackup\Core\Destination\Integration\DestinationDirIterator;
 use JetBackup\Core\Destination\Integration\DestinationDiskUsage;
+use JetBackup\Core\Destination\Integration\DestinationFile;
 use JetBackup\Core\Exception\InvalidArgumentException;
 use JetBackup\Core\Exception\IOException;
 use JetBackup\Core\Exception\JBException;
@@ -175,6 +176,12 @@ class HelloWorld implements Destination {
 	 * @return DestinationDiskUsage
 	 */
 	public function getDiskInfo(): ?DestinationDiskUsage {
+	}
+
+	/**
+	 * @return DestinationFile|null
+	 */
+	public function getFileStat($file): ?DestinationFile {
 	}
 
 	/**
