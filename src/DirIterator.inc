@@ -18,17 +18,16 @@ defined( '__JETBACKUP__' ) or die( 'Restricted access' );
 class DirIterator implements DestinationDirIterator {
 
 	/**
-	 * DirIterator constructor.
-	 *
-	 * @param $directory
+	 * @param string $directory
 	 * @param bool $recursive
 	 */
-	public function __construct($directory, $recursive=false) {
+	public function __construct(string $directory, bool $recursive=false) {
 	}
 
 	/**
+	 * @return void
 	 */
-	public function rewind() {
+	public function rewind():void {
 	}
 
 	/**
